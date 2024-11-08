@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header {
+    background-color: #282c34;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    padding: 2rem 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .project {
+    margin-bottom: 1.5rem;
+  }
+  
+  footer {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .nav ul{
+    margin-left: -80px;
+   
+}
+.nav li {
+    padding-left: 60px;
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+.nav a {
+    text-decoration: none; 
+    font-size: 27px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative; 
+}
+.nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(97,252,255);
+    background: linear-gradient(61deg, rgba(97,252,255,1) 0%, rgba(2,215,255,1) 53%, rgb(50, 72, 235) 100%);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+    
+}
+.nav a:hover::before {
+    transform: scaleX(1);
+   
+}
+.nav a:active{
+    color: aqua;
+}
+.heading{
+    font-size: 25px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 250px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading:hover{
+    color: red;
+}
+.heading:active{
+    color: rgb(85, 85, 162)
+    
+}
+.edu ul li{
+    list-style: none;
+    padding-top: 15px;
+    margin-left: 250px;
+   
+}
+.edulist{
+    color: aqua;
+    font-weight: bold;
+    font-size: 18px;
+}
+</style>
+<body>
+
+  <!-- Header -->
+  <header class="nav">
+    <div class="container">
+      <h1>Tushar Prajapati</h1>
+      <p>Java Developer | Tech Enthusiast | Web-Developer</p>
+    </div>
+    <ul id="sidemenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="file:///C:/Users/praja/OneDrive/Documents/resume_edited.pdf">Download CV</a></li>
+    </ul>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Highly motivated recent graduate with a Bachelor in Computer Application, passionate about full stack development and proficient in MySQL,Java. During my internship, I gained hands-on experience in real-world projects, showcasing my ability to achieve and excel. With a strong foundation in both front-end and back-end technologies, I am eager to bring my enthusiasm and fresh perspective to a dynamic team.Seeking an opportunity to kickstart my career in a challenging and rewarding environment, I am dedicated to continuous learning and adapting to new challenges. My problem-solving skills, teamwork, and effective communication abilities make me a valuable addition to any team. I am ready to tackle complex problems and grow alongside a forward-thinking company committed to innovation and excellence.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+  </section>
+  <div class="heading">
+    <p>Education</p>
+</div>
+  <div class="edu">
+    <ul>
+        <li><span class="edulist">MCA (2024-Present)</span>
+            <p class="po">Kiet Group Of Institution,Muradnagar</p>
+        </li>
+        <li><span class="edulist">BCA (2021-2024)</span>
+            <p class="po">Institue Of Applied Medicines And Reserach Duhai Ghaziabad</p>
+        </li>
+        <li><span class="edulist">Higher(2020)</span>
+            <p class="po">T.R.M Public School Modinagar</p>
+        </li>
+        <li><span class="edulist">Secondary(2018)</span>
+            <p class="po">T.R.M Public School Modinagar</p>
+        </li>
+    </ul>
+</div>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Web Development Intern <a href="https://github.com/tusharprajapati4141/MARUTI-SUZUKI-OCTANET-OCTOBER">View Project</a></p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Web Development Intern <a href="https://github.com/tusharprajapati4141/Samsung-India-Webpage">View Project</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="prajapatitushar9720@gmail.com">prajapatitushar9720@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Tushar Prajapati. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
